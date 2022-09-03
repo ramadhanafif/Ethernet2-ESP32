@@ -1,0 +1,13 @@
+{
+  "name": "ESP32-W5500-Ethernet2",
+  "version": "1.0.4",
+  "description": "Fork from deprecated adafruit Ethernet2, with minor edits to ensure W5500 it works on Arduino-ESP32 framework",
+  "keywords": "ESP32, ethernet, communication, W5500",
+  "repository":
+  {
+    "type": "git",
+    "url": "https://github.com/ramadhanafif/Ethernet2-W5500-ESP32"
+  },
+  "frameworks": "arduino",
+  "platforms": "*"
+}
