@@ -9,5 +9,6 @@
     "url": "https://github.com/ramadhanafif/Ethernet2-W5500-ESP32"
   },
   "frameworks": "arduino",
-  "platforms": "*"
+  "platforms": "*",
+  "dependencies": "SPI"
 }
