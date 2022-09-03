@@ -31,3 +31,8 @@ Copyright (c) 2010 by WIZnet <support@wiznet.co.kr>
 
 --------------
 Various by Arduino.org team
+
+--------------
+w5500.h
+  small modification to comply with arduino-esp32 SPI communication
+  by Muhammad Afif Ramadhan

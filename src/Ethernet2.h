@@ -5,7 +5,7 @@
  - 10 Apr. 2015
  Added support for Arduino Ethernet Shield 2
  by Arduino.org team
- 
+
  */
 #ifndef ethernet_h
 #define ethernet_h
@@ -17,22 +17,26 @@
 #include "EthernetServer.h"
 #include "Dhcp.h"
 
-
-
-class EthernetClass {
+class EthernetClass
+{
 private:
   IPAddress _dnsServerAddress;
-  char* _dnsDomainName;
-  char* _hostName;
-  DhcpClass* _dhcp;
+  char *_dnsDomainName;
+  char *_hostName;
+  DhcpClass *_dhcp;
+
 public:
   uint8_t w5500_cspin;
 
   static uint8_t _state[MAX_SOCK_NUM];
   static uint16_t _server_port[MAX_SOCK_NUM];
 
-  EthernetClass() { _dhcp = NULL; w5500_cspin = 10; }
-  void init(uint8_t _cspin = 10) { w5500_cspin = _cspin; }
+  EthernetClass()
+  {
+    _dhcp = NULL;
+    // w5500_cspin = 10;
+  }
+  void init(uint8_t _cspin = HSPI_SS) { w5500_cspin = _cspin; }
 
 #if defined(WIZ550io_WITH_MACADDRESS)
   // Initialize function when use the ioShield serise (included WIZ550io)
@@ -55,15 +59,15 @@ public:
   void begin(uint8_t *mac_address, IPAddress local_ip, IPAddress dns_server, IPAddress gateway, IPAddress subnet);
 
 #endif
-  
+
   int maintain();
 
   IPAddress localIP();
   IPAddress subnetMask();
   IPAddress gatewayIP();
   IPAddress dnsServerIP();
-  char* dnsDomainName();
-  char* hostName();
+  char *dnsDomainName();
+  char *hostName();
 
   friend class EthernetClient;
   friend class EthernetServer;

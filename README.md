@@ -1,8 +1,8 @@
-# Deprecated/Archived Library 
+# Ethernet "2" Library for Arduino
 
-This library is no longer going to be used, since the official Arduino library has been updated and works great https://github.com/arduino-libraries/Ethernet
+Forked from https://github.com/adafruit/Ethernet2 but with some edits to ensure it works on ESP32.
 
-
+***Note: Tested ONLY on ESP32.***
 
 License
 -------
