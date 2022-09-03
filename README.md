@@ -1,6 +1,6 @@
 # Ethernet "2" Library for Arduino
 
-Forked from https://github.com/adafruit/Ethernet2 but with some edits to ensure it works on ESP32.
+Forked from https://github.com/adafruit/Ethernet2 but with minor edits to ensure W5500 works on ESP32.
 
 ***Note: Tested ONLY on ESP32.***
 
